@@ -45,8 +45,6 @@ public class Game extends Observable {
     public void increaseSize() {
         Snake tail = snake.get(snake.size()-1);
         Snake newBody = new Snake(tail.getX(), tail.getY());
-        System.out.println(tail.getX());
-        System.out.println(tail.getY());
         snake.add(newBody);
     }
 
